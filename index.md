@@ -2,7 +2,7 @@
 
 # Welcome to Disaster Radio Slovakia and Czech Republic
 
-![Cover image]({{ site.url }}/disaster-radio-bratislava.jpg)
+![Cover image](disaster-radio-bratislava.jpg)
 
 ## Our connectivity
 
