@@ -25,13 +25,13 @@ telnet 192.168.4.1
 In the console, configure frequencies and spreading factor:
 
 ```bash
-/set sf 10
+/set sf 12
 /set lorafrq 868
 ```
 
 ## How and what to flash
 
-Right now we are running [compiled master branch](https://github.com/DisasterRadioSKCZ/disaster-radio/releases/tag/1.0-rc2-test-ttgo2) (will be rc2).
+Right now we are running [compiled master branch](https://github.com/DisasterRadioSKCZ/disaster-radio/releases/tag/1.0-rc.1.eu-new) (will be rc2). Build for TTGO2
 
 Replace /dev/tty.usb-serial-* with your USB device name (this is macOs naming):
 
