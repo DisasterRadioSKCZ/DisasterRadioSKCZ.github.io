@@ -40,3 +40,10 @@ unzip esp_flash.bin.zip
 esptool.py -p /dev/tty.usbserial-* erase_flash
 esptool.py -p /dev/tty.usbserial-* --baud 460800 write_flash 0x00000 esp_flash.bin
 ```
+
+## Useful links
+
+ - [Disaster Radio](https://github.com/sudomesh/disaster-radio) - the implementation we currently use
+ - [Meshtastic](https://www.meshtastic.org/) - an alternative to Disaster Radio
+ - [LoraCaster](https://github.com/valerio-vaccaro/LoraCaster) - low-level implementation of Lora with examples on how to broadcast BTC transactions
+ - [ArmaChat](https://hackaday.io/project/171790-armawatch-armachat-long-range-radio-messengers) - another broadcaster solution - with a keyboard!
