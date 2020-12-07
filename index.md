@@ -27,6 +27,7 @@ In the console, configure frequencies and spreading factor:
 ```bash
 /set sf 12
 /set lorafrq 868
+/set interval 300000
 ```
 
 ## How and what to flash
