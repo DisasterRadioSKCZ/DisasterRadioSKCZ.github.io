@@ -13,13 +13,13 @@ We haved moved to RNode/Reticulum/Nomadnet/Sideband.
 First install required software (sideband only if you want GUI):
 
 ```bash
-pip install rns nomadnet sideband
+pip install rns nomadnet sbapp
 ```
 
 or macOS:
 
 ```bash
-pip install rns nomadnet sideband[macos]
+pip install rns nomadnet sbapp[macos]
 ```
 
 Then flash:
@@ -60,6 +60,16 @@ You can write using nomadnet to:
  - j: 984e712817e73322e3a2b426d7fea8a1
  - j-1: 832073d350931a26cf2788b22872c2e0 (to test propagation node, it will not arrive directly)
 
+## On propagation and routing
+
+There are two ways messages are routed. First is routing when the other node is online. You can enable this
+mode in .reticulum/config by setting enable_transport=True. I think this is almost always a good idea.
+
+Another operation is propagation. This means sending a message to a propagation node, which will deliver it
+when the destination will become online. You can trigger the sync to a propagation node from the sidekick menu.
+If you want to run a propagation node, you need to run nomadnet with .nomadnet/config's enable_node = yes. Then
+when sending a message, click the network icon in sideband and change direct delivery to propagation node (there
+is also a "qr code" option, which is paper QR code, which is a real delivery mode too!
 
 ## Useful links
 
