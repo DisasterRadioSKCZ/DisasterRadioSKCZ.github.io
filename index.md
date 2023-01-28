@@ -1,5 +1,3 @@
-#  
-
 # Welcome to Disaster Radio Slovakia and Czech Republic
 
 ![Cover image](disaster-radio-bratislava.jpg?a)
