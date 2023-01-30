@@ -2,9 +2,11 @@
 
 ![Cover image](disaster-radio-bratislava.jpg?a)
 
+<!--
 ## Our connectivity
 
 [View the map of Bratislava](https://umap.openstreetmap.fr/en/map/disaster-radio-sk-cz_495988)
+-->
 
 ## Our settings
 
@@ -46,9 +48,9 @@ Answer the questions. Then run either nomadnet or sideband. Quit. Edit ~/.reticu
   # Set frequency to 867.2 MHz
   frequency = 867200000
   bandwidth = 125000
-  txpower = 7
-  # Important: We are using spreadingfactor 10
-  spreadingfactor = 10
+  txpower = 17
+  # Important: We are using spreadingfactor 12
+  spreadingfactor = 12
   codingrate = 5
   flow_control = False
 ```
