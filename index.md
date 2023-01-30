@@ -49,8 +49,8 @@ Answer the questions. Then run either nomadnet or sideband. Quit. Edit ~/.reticu
   frequency = 867200000
   bandwidth = 125000
   txpower = 17
-  # Important: We are using spreadingfactor 12
-  spreadingfactor = 12
+  # Important: We are using spreadingfactor 10
+  spreadingfactor = 10
   codingrate = 5
   flow_control = False
 ```
