@@ -2,11 +2,9 @@
 
 ![Cover image](disaster-radio-bratislava.jpg?a)
 
-<!--
 ## Our connectivity
 
 [View the map of Bratislava](https://umap.openstreetmap.fr/en/map/disaster-radio-sk-cz_495988)
--->
 
 ## Our settings
 
