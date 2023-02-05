@@ -2,10 +2,6 @@
 
 ![Cover image](disaster-radio-bratislava.jpg?a)
 
-## Our connectivity
-
-[View the map of Bratislava](https://umap.openstreetmap.fr/en/map/disaster-radio-sk-cz_495988)
-
 ## Our settings
 
 We haved moved to RNode/Reticulum/Nomadnet/Sideband.
@@ -28,7 +24,11 @@ Then flash:
 rnodeconf --autoinstall
 ```
 
-Answer the questions. Then run either nomadnet or sideband. Quit. Edit ~/.reticulum/config:
+Answer the questions and node the device name of your device (should start with /dev/).
+
+Then run either nomadnet or sideband. Quit. This creates default configuration files.
+
+Edit ~/.reticulum/config and add this towards the end (I kept the 'Default Interface' part for context). Of course add your own device port in the 'port =' section:
 
 ```
   [[Default Interface]]
@@ -41,7 +41,8 @@ Answer the questions. Then run either nomadnet or sideband. Quit. Edit ~/.reticu
   type = RNodeInterface
 
   interface_enabled = True
-  port = /dev/cu.usbserial-01E77D60
+  # Your port device here
+  port = /dev/cu.usbserial-
 
   # Set frequency to 867.2 MHz
   frequency = 867200000
@@ -78,9 +79,14 @@ is also a "qr code" option, which is paper QR code, which is a real delivery mod
  - [Official How-to](https://unsigned.io/private-messaging-over-lora/)
  - [Included utility programs](https://reticulum.network/manual/using.html#included-utility-programs)
 
-Obsolete:
+## Obsolete
 
  - [Disaster Radio](https://github.com/sudomesh/disaster-radio) - the implementation we currently use
  - [Meshtastic](https://www.meshtastic.org/) - an alternative to Disaster Radio
  - [LoraCaster](https://github.com/valerio-vaccaro/LoraCaster) - low-level implementation of Lora with examples on how to broadcast BTC transactions
  - [ArmaChat](https://hackaday.io/project/171790-armawatch-armachat-long-range-radio-messengers) - another broadcaster solution - with a keyboard!
+
+### Our connectivity
+
+[View the map of Bratislava](https://umap.openstreetmap.fr/en/map/disaster-radio-sk-cz_495988) - this is out of date, need to be edited collectively or replaced
+
