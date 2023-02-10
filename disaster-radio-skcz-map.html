@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+        <script src="js/L.KML.js"></script>
+      <title>Disaster Radio SKCZ map</title>
+    </head>
+    <body>
+        <div style="width: 100vw; height: 100vh" id="map"></div>
+        <script type="text/javascript">
+            // Make basemap
+            const map = new L.Map('map', { center: new L.LatLng(17.10, 48.11), zoom: 11 });
+            const osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+            map.addLayer(osm);
+
+            // Load kml file
+            fetch('radios.kml')
+                .then(res => res.text())
+                .then(kmltext => {
+                    // Create new kml overlay
+                    const parser = new DOMParser();
+                    const kml = parser.parseFromString(kmltext, 'text/xml');
+                    const track = new L.KML(kml);
+                    map.addLayer(track);
+
+                    // Adjust map to show the kml
+                    const bounds = track.getBounds();
+                    map.fitBounds(bounds);
+                });
+        </script>
+    </body>
+</html>
