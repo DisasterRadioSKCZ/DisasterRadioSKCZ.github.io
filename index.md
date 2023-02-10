@@ -88,5 +88,5 @@ is also a "qr code" option, which is paper QR code, which is a real delivery mod
 
 ### Our connectivity
 
-[View the map of Bratislava](https://umap.openstreetmap.fr/en/map/disaster-radio-sk-cz_495988) - this is out of date, need to be edited collectively or replaced
+[View the map of Bratislava](disaster-radio-skcz-map.html) - this is out of date, need to be edited collectively or replaced (in progress)
 
