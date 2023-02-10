@@ -15,7 +15,7 @@
             map.addLayer(osm);
 
             // Load kml file
-            fetch('radios.kml')
+            fetch('disaster-radio-map-bratislava.kml')
                 .then(res => res.text())
                 .then(kmltext => {
                     // Create new kml overlay
