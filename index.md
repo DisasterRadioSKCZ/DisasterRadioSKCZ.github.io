@@ -58,8 +58,7 @@ Edit ~/.reticulum/config and add this towards the end (I kept the 'Default Inter
 
 You can write using nomadnet to:
 
- - j: 984e712817e73322e3a2b426d7fea8a1
- - j-1: 832073d350931a26cf2788b22872c2e0 (to test propagation node, it will not arrive directly)
+ - j: 3008c42f9db940091f14a48c3d1cbf6f
 
 ## On propagation and routing
 
