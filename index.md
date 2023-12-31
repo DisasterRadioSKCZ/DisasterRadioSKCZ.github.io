@@ -71,6 +71,12 @@ If you want to run a propagation node, you need to run nomadnet with .nomadnet/c
 when sending a message, click the network icon in sideband and change direct delivery to propagation node (there
 is also a "qr code" option, which is paper QR code, which is a real delivery mode too!
 
+## Connect using Sideband app on your Android (and soon iOS)
+
+You can connect to your rnode using bluetooth and use the Sideband messenger.
+
+<iframe src="https://player.vimeo.com/video/898952535?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="800" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Ako rozbehať SideBand (Reticulum klient) s rnode."></iframe>
+
 ## Useful links
 
  - [RNode](https://unsigned.io/rnode/)
