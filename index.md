@@ -46,11 +46,11 @@ Edit ~/.reticulum/config and add this towards the end (I kept the 'Default Inter
 
   # Set frequency to 867.2 MHz
   frequency = 867200000
-  bandwidth = 125000
+  bandwidth = 250000
   txpower = 17
   # Important: We are using spreadingfactor 10
   spreadingfactor = 10
-  codingrate = 5
+  codingrate = 6
   flow_control = False
 ```
 
